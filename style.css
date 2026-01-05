@@ -12,6 +12,7 @@ body {
 }
 
 /* ================= HERO ================= */
+/* ================= HERO ================= */
 
 .hero {
   position: relative;
@@ -21,17 +22,32 @@ body {
       rgba(0, 0, 0, 0.55)
     ),
     url('hero-drinks.jpg') center / cover no-repeat;
-  padding: 120px 20px;
+  padding: 140px 20px 120px;
   text-align: center;
   color: #ffffff;
 }
 
-/* REMOVE watermark entirely */
+/* Primary logo (clean & readable) */
 .hero-logo {
-  display: none;
+  position: relative;
+  width: 140px;
+  margin-bottom: 20px;
+  z-index: 3;
+}
+
+/* Subtle official watermark */
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url('BElogo.jpg') center / 320px no-repeat;
+  opacity: 0.06;
+  z-index: 1;
 }
 
 .hero-content {
+  position: relative;
+  z-index: 2;
   max-width: 850px;
   margin: auto;
 }
@@ -39,16 +55,20 @@ body {
 .hero-content h1 {
   font-size: 3rem;
   font-weight: 700;
-  letter-spacing: 0.5px;
 }
 
 .hero-content p {
   font-size: 1.25rem;
   margin-top: 18px;
   font-weight: 500;
-  opacity: 0.95;
 }
 
+/* Mobile adjustment */
+@media (max-width: 600px) {
+  .hero-logo {
+    width: 110px;
+  }
+}
 /* ================= NAV ================= */
 
 nav {
