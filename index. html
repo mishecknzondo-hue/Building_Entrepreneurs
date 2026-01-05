@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Building Entrepreneurs | Empowering Youth Innovation</title>
+
+    <!-- External CSS (to be added later) -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ===== Header ===== -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="images/logo.jpg" alt="Building Entrepreneurs Logo">
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#mission">Mission & Vision</a></li>
+                    <li><a href="#programs">Programs</a></li>
+                    <li><a href="#leadership">Leadership</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ===== Hero Section ===== -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Empowering Youth Through Innovation and Entrepreneurship</h1>
+            <p>
+                Building Entrepreneurs is committed to nurturing innovative business ideas
+                among youth in Chikwawa District and across Malawi.
+            </p>
+            <a href="#about" class="btn">Learn More</a>
+        </div>
+    </section>
+
+    <!-- ===== About Section ===== -->
+    <section id="about">
+        <div class="container">
+            <h2>About Building Entrepreneurs</h2>
+            <p>
+                Building Entrepreneurs is a youth-driven initiative focused on promoting
+                entrepreneurship, creativity, and sustainable economic development.
+                We support young people by equipping them with innovative business skills
+                and practical knowledge to create employment and transform communities.
+            </p>
+            <p>
+                The organization currently operates as a community-based initiative and
+                is in the process of formal registration.
+            </p>
+        </div>
+    </section>
+
+    <!-- ===== Mission & Vision ===== -->
+    <section id="mission">
+        <div class="container">
+            <h2>Mission, Vision & Values</h2>
+
+            <div class="mv-grid">
+                <div class="mv-box">
+                    <h3>Our Mission</h3>
+                    <p>
+                        To promote innovative business ideas among youth in Chikwawa District
+                        and Malawi as a whole.
+                    </p>
+                </div>
+
+                <div class="mv-box">
+                    <h3>Our Vision</h3>
+                    <p>
+                        A generation of empowered, self-reliant, and innovative young
+                        entrepreneurs driving Malawi’s economic growth.
+                    </p>
+                </div>
+
+                <div class="mv-box">
+                    <h3>Core Values</h3>
+                    <ul>
+                        <li>Innovation</li>
+                        <li>Youth Empowerment</li>
+                        <li>Integrity</li>
+                        <li>Community Development</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Programs Section ===== -->
+    <section id="programs">
+        <div class="container">
+            <h2>Our Programs</h2>
+
+            <div class="programs-grid">
+                <div class="program-box">
+                    <h3>Youth Entrepreneurship Training</h3>
+                    <p>
+                        Providing practical business and entrepreneurial skills to young people.
+                    </p>
+                </div>
+
+                <div class="program-box">
+                    <h3>Business Idea Incubation</h3>
+                    <p>
+                        Supporting innovative ideas from concept to viable business models.
+                    </p>
+                </div>
+
+                <div class="program-box">
+                    <h3>Mentorship & Networking</h3>
+                    <p>
+                        Connecting youth with experienced entrepreneurs and industry professionals.
+                    </p>
+                </div>
+
+                <div class="program-box">
+                    <h3>Community Innovation</h3>
+                    <p>
+                        Promoting solutions that address local economic and social challenges.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Leadership Section ===== -->
+    <section id="leadership">
+        <div class="container">
+            <h2>Leadership</h2>
+            <p>
+                Building Entrepreneurs is led by a committed team of youth leaders dedicated
+                to innovation, entrepreneurship, and community empowerment.
+            </p>
+
+            <div class="leader-box">
+                <h3>Founder & CEO</h3>
+                <p>
+                    Name to be officially announced.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Contact Section ===== -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+
+            <div class="contact-info">
+                <p><strong>Email:</strong> buildingentrepreneurs@gmail.com</p>
+                <p><strong>Phone:</strong> 0992089555</p>
+                <p><strong>Location:</strong> Chikwawa District, Malawi</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Footer ===== -->
+    <footer>
+        <div class="container footer-container">
+            <img src="images/logo.jpg" alt="Building Entrepreneurs Logo">
+            <p>
+                Building Entrepreneurs — Empowering youth through innovation and entrepreneurship.
+            </p>
+            <p>
+                &copy; 2026 Building Entrepreneurs. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <!-- External JS (to be added later) -->
+    <script src="js/script.js"></script>
+</body>
+</html>
