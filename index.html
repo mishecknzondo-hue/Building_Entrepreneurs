@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Building Entrepreneurs | Chikwawa & Nsanje District, Malawi</title>
+  <title>Building Entrepreneurs | Chikwawa & Nsanje Districts, Malawi</title>
 
   <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
@@ -13,18 +13,14 @@
 <body>
 
   <!-- HERO SECTION -->
+  <header class="hero">
+    <img src="BElogo.jpg" alt="Building Entrepreneurs Logo" class="hero-logo">
+    <div class="hero-content">
+      <h1>Building Entrepreneurs</h1>
+      <p>Creating the Great Minds for the Youth</p>
+    </div>
+  </header>
 
-<header class="hero">
-
-  <!-- Visible Logo -->
-  <img src="BElogo.jpg" alt="Building Entrepreneurs Logo" class="hero-logo">
-
-  <div class="hero-content">
-    <h1>Building Entrepreneurs</h1>
-    <p>Creating the Great Minds for the Youth</p>
-  </div>
-
-</header>
   <!-- NAVIGATION -->
   <nav>
     <ul class="nav-container">
@@ -56,7 +52,7 @@
     <div class="container">
       <h2>Our Mission</h2>
       <p>
-        To promote innovative and sustainable business ideas among youth in Chikwawa District and Malawi
+        To promote innovative and sustainable business ideas among youth in Chikwawa & Nsanje Districts and Malawi
         as a whole, empowering them with entrepreneurial knowledge, skills, and mentorship for economic
         self-reliance.
       </p>
@@ -79,35 +75,29 @@
   <section id="team" class="highlight">
     <div class="container">
       <h2>Leadership & Members</h2>
-
       <div class="team-grid">
         <div class="team-member">
           <h3>Mr. Christopher Benson Soda</h3>
           <p><strong>Chief Executive Officer (CEO)</strong></p>
           <p>BSc in Agribusiness Management<br>LUANAR</p>
         </div>
-
         <div class="team-member">
           <h3>Mr. Misheck Nzondo</h3>
           <p><strong>Treasurer</strong></p>
           <p>BSc in Mathematical Sciences<br>Mzuzu University</p>
         </div>
-
         <div class="team-member">
           <h3>Mr. Rapken Letas</h3>
           <p>Member</p>
         </div>
-
         <div class="team-member">
           <h3>Mr. Lucas Mashonga</h3>
           <p>Member</p>
         </div>
-
         <div class="team-member">
           <h3>Mr. Fanuel Soda</h3>
           <p>Member</p>
         </div>
-
         <div class="team-member">
           <h3>Mr. Dalitso Jim</h3>
           <p>Member</p>
@@ -117,41 +107,40 @@
   </section>
 
   <!-- CONTACT -->
-<section id="contact" class="container">
-  <h2>Contact Us</h2>
-  <p>
-    For partnership opportunities, business ideas, mentorship, and entrepreneurship support,
-    please contact us using the details below.
-  </p>
+  <section id="contact" class="container">
+    <h2>Contact Us</h2>
+    <p>
+      For partnership opportunities, business ideas, mentorship, and entrepreneurship support,
+      please contact us using the details below.
+    </p>
 
-  <!-- Contact details with both districts -->
-  <p class="contact-details">
-    📍 <strong>Physical Address:</strong> Chikwawa & Nsanje Districts, Malawi<br>
-    📧 <strong>Email:</strong> buildingentrepreneursmw@gmail.com<br>
-    📞 <strong>Phone:</strong> 0992 089 55
-  </p>
+    <p class="contact-details">
+      📍 <strong>Physical Address:</strong> Chikwawa & Nsanje Districts, Malawi<br>
+      📧 <strong>Email:</strong> buildingentrepreneursmw@gmail.com<br>
+      📞 <strong>Phone:</strong> 0992 089 55
+    </p>
 
-  <!-- Single, unified button group -->
-  <div class="button-group">
-    <button onclick="showMessage()">Get in Touch</button>
+    <div class="button-group">
+      <button onclick="showMessage()">Get in Touch</button>
 
-    <a
-      href="NEW BUILDING ENTERPRENEURS CONSTITUTION.pdf"
-      class="btn-download"
-      download
-    >
-      Download Constitution (PDF)
-    </a>
+      <a
+        href="NEW BUILDING ENTERPRENEURS CONSTITUTION.pdf"
+        class="btn-download"
+        download
+      >
+        Download Constitution (PDF)
+      </a>
 
-    <a
-      href="https://www.facebook.com/profile.php?id=61571465440410"
-      target="_blank"
-      class="facebook-btn"
-    >
-      Follow Us on Facebook
-    </a>
-  </div>
-</section>
+      <a
+        href="https://www.facebook.com/profile.php?id=61571465440410"
+        target="_blank"
+        class="facebook-btn"
+      >
+        Follow Us on Facebook
+      </a>
+    </div>
+  </section>
+
   <!-- FOOTER -->
   <footer>
     <p>
@@ -159,6 +148,15 @@
     </p>
   </footer>
 
-  <script src="script.js"></script>
+  <script>
+    // Optional: Show alert when "Get in Touch" clicked
+    function showMessage() {
+      alert("Thank you! Please contact us via email or phone.");
+    }
+
+    // Auto-update year
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
 </body>
 </html>
