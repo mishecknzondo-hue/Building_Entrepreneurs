@@ -1,3 +1,4 @@
+/* ================= GLOBAL RESET ================= */
 * {
   margin: 0;
   padding: 0;
@@ -6,28 +7,23 @@
 }
 
 body {
-  background: #f4f6f5; /* softer, less harsh than white */
+  background: #f4f6f5; /* softer than white */
   color: #2f2f2f;
   line-height: 1.75;
 }
 
 /* ================= HERO ================= */
-/* ================= HERO ================= */
-
 .hero {
   position: relative;
   background:
-    linear-gradient(
-      rgba(0, 0, 0, 0.55),
-      rgba(0, 0, 0, 0.55)
-    ),
+    linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
     url('hero-drinks.jpg') center / cover no-repeat;
   padding: 140px 20px 120px;
   text-align: center;
   color: #ffffff;
 }
 
-/* Primary logo (clean & readable) */
+/* Primary logo */
 .hero-logo {
   position: relative;
   width: 140px;
@@ -35,7 +31,7 @@ body {
   z-index: 3;
 }
 
-/* Subtle official watermark */
+/* Watermark logo */
 .hero::after {
   content: "";
   position: absolute;
@@ -63,14 +59,20 @@ body {
   font-weight: 500;
 }
 
-/* Mobile adjustment */
+/* HERO Mobile */
 @media (max-width: 600px) {
   .hero-logo {
     width: 110px;
   }
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+  .hero-content p {
+    font-size: 1.1rem;
+  }
 }
-/* ================= NAV ================= */
 
+/* ================= NAVIGATION ================= */
 nav {
   background: #1f7a4f;
 }
@@ -94,8 +96,15 @@ nav a:hover {
   text-decoration: underline;
 }
 
-/* ================= SECTIONS ================= */
+/* Mobile nav */
+@media (max-width: 600px) {
+  .nav-container {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
 
+/* ================= SECTIONS ================= */
 .container {
   max-width: 1000px;
   margin: auto;
@@ -108,13 +117,12 @@ section h2 {
   margin-bottom: 22px;
 }
 
-/* Clean section contrast */
+/* Highlighted section */
 .highlight {
-  background: #eef4f1; /* calmer than mint green */
+  background: #eef4f1;
 }
 
 /* ================= OBJECTIVES ================= */
-
 .objectives-list {
   margin-left: 22px;
 }
@@ -124,7 +132,6 @@ section h2 {
 }
 
 /* ================= TEAM ================= */
-
 .team-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -137,44 +144,64 @@ section h2 {
   padding: 28px;
   border-radius: 14px;
   text-align: center;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.06);
 }
 
 /* ================= CONTACT ================= */
-
 .contact-details {
   margin: 22px 0;
   font-size: 1.05rem;
+  color: #333;
+  line-height: 1.6;
 }
 
 .button-group {
   display: flex;
-  gap: 16px;
   flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  margin-top: 20px;
 }
 
-button {
+.button-group button,
+.button-group a {
   padding: 13px 32px;
-  background: #1f7a4f;
-  color: #ffffff;
-  border: none;
   border-radius: 32px;
   font-size: 1rem;
   font-weight: 600;
+  text-decoration: none;
   cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-block;
+  text-align: center;
 }
 
-button:hover {
+/* Get in Touch */
+.button-group button {
+  background: #1f7a4f;
+  color: #ffffff;
+  border: none;
+}
+
+.button-group button:hover {
   background: #155a39;
 }
 
+/* Download Constitution */
+.btn-download {
+  background: #0077cc;
+  color: #ffffff;
+  border: none;
+}
+
+.btn-download:hover {
+  background: #005fa3;
+}
+
+/* Facebook */
 .facebook-btn {
-  padding: 13px 32px;
-  border-radius: 32px;
   background: #1877f2;
   color: #ffffff;
-  text-decoration: none;
-  font-weight: 600;
 }
 
 .facebook-btn:hover {
@@ -182,7 +209,6 @@ button:hover {
 }
 
 /* ================= FOOTER ================= */
-
 footer {
   background: #155a39;
   color: #ffffff;
@@ -192,17 +218,8 @@ footer {
 }
 
 /* ================= RESPONSIVE ================= */
-
 @media (max-width: 600px) {
-  .hero-content h1 {
-    font-size: 2.2rem;
-  }
-
-  .hero-content p {
-    font-size: 1.1rem;
-  }
-
-  .nav-container {
+  .button-group {
     flex-direction: column;
     gap: 12px;
   }
