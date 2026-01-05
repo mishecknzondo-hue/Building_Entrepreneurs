@@ -6,46 +6,51 @@
 }
 
 body {
-  background: #f9fafb;
-  color: #333;
-  line-height: 1.7;
+  background: #f4f6f5; /* softer, less harsh than white */
+  color: #2f2f2f;
+  line-height: 1.75;
 }
 
-/* HERO */
+/* ================= HERO ================= */
+
 .hero {
   position: relative;
-  background: url('hero-drinks.jpg') center/cover no-repeat;
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.55),
+      rgba(0, 0, 0, 0.55)
+    ),
+    url('hero-drinks.jpg') center / cover no-repeat;
   padding: 120px 20px;
   text-align: center;
-  color: #fff;
+  color: #ffffff;
 }
 
+/* REMOVE watermark entirely */
 .hero-logo {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 200px;
-  opacity: 0.15;
-  z-index: 1;
+  display: none;
 }
 
 .hero-content {
-  position: relative;
-  z-index: 2;
+  max-width: 850px;
+  margin: auto;
 }
 
 .hero-content h1 {
   font-size: 3rem;
   font-weight: 700;
+  letter-spacing: 0.5px;
 }
 
 .hero-content p {
-  font-size: 1.2rem;
-  margin-top: 15px;
+  font-size: 1.25rem;
+  margin-top: 18px;
+  font-weight: 500;
+  opacity: 0.95;
 }
 
-/* NAV */
+/* ================= NAV ================= */
+
 nav {
   background: #1f7a4f;
 }
@@ -54,78 +59,89 @@ nav {
   list-style: none;
   display: flex;
   justify-content: center;
-  gap: 25px;
-  padding: 15px;
+  gap: 28px;
+  padding: 16px;
 }
 
 nav a {
-  color: #fff;
+  color: #ffffff;
   text-decoration: none;
   font-weight: 600;
+  letter-spacing: 0.3px;
 }
 
-/* SECTIONS */
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* ================= SECTIONS ================= */
+
 .container {
   max-width: 1000px;
   margin: auto;
-  padding: 60px 20px;
-}
-
-.highlight {
-  background: #e9f5ef;
+  padding: 70px 20px;
 }
 
 section h2 {
-  font-size: 2rem;
+  font-size: 2.1rem;
   color: #1f7a4f;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 }
 
-/* OBJECTIVES */
+/* Clean section contrast */
+.highlight {
+  background: #eef4f1; /* calmer than mint green */
+}
+
+/* ================= OBJECTIVES ================= */
+
 .objectives-list {
-  margin-left: 20px;
+  margin-left: 22px;
 }
 
 .objectives-list li {
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
-/* TEAM */
+/* ================= TEAM ================= */
+
 .team-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 25px;
-  margin-top: 30px;
+  gap: 28px;
+  margin-top: 35px;
 }
 
 .team-member {
-  background: #fff;
-  padding: 25px;
-  border-radius: 12px;
+  background: #ffffff;
+  padding: 28px;
+  border-radius: 14px;
   text-align: center;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
 }
 
-/* CONTACT */
+/* ================= CONTACT ================= */
+
 .contact-details {
-  margin: 20px 0;
+  margin: 22px 0;
   font-size: 1.05rem;
 }
 
 .button-group {
   display: flex;
-  gap: 15px;
+  gap: 16px;
   flex-wrap: wrap;
 }
 
 button {
-  padding: 12px 30px;
+  padding: 13px 32px;
   background: #1f7a4f;
-  color: #fff;
+  color: #ffffff;
   border: none;
-  border-radius: 30px;
-  cursor: pointer;
+  border-radius: 32px;
   font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
 }
 
 button:hover {
@@ -133,10 +149,10 @@ button:hover {
 }
 
 .facebook-btn {
-  padding: 12px 30px;
-  border-radius: 30px;
+  padding: 13px 32px;
+  border-radius: 32px;
   background: #1877f2;
-  color: #fff;
+  color: #ffffff;
   text-decoration: none;
   font-weight: 600;
 }
@@ -145,25 +161,29 @@ button:hover {
   background: #0f5ec7;
 }
 
-/* FOOTER */
+/* ================= FOOTER ================= */
+
 footer {
   background: #155a39;
-  color: #fff;
+  color: #ffffff;
   text-align: center;
-  padding: 20px;
+  padding: 22px;
+  font-size: 0.95rem;
 }
 
-/* RESPONSIVE */
+/* ================= RESPONSIVE ================= */
+
 @media (max-width: 600px) {
   .hero-content h1 {
     font-size: 2.2rem;
   }
 
-  .hero-logo {
-    width: 120px;
+  .hero-content p {
+    font-size: 1.1rem;
   }
 
   .nav-container {
     flex-direction: column;
+    gap: 12px;
   }
 }
