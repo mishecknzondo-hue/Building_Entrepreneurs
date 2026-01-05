@@ -1,3 +1,4 @@
+/* Reset & font */
 * {
   margin: 0;
   padding: 0;
@@ -20,6 +21,19 @@ body {
   text-align: center;
 }
 
+.hero-content {
+  max-width: 800px;
+  margin: auto;
+}
+
+/* Logo styling: medium size */
+.logo {
+  width: 150px;  /* medium size */
+  height: auto;
+  margin-bottom: 20px;
+}
+
+/* Hero text */
 .hero h1 {
   font-size: 3rem;
   font-weight: 700;
@@ -87,16 +101,6 @@ section h2 {
   box-shadow: 0 8px 20px rgba(0,0,0,0.08);
 }
 
-.team-member h3 {
-  margin-bottom: 10px;
-  font-size: 1.2rem;
-}
-
-.team-member p {
-  color: #555;
-  font-weight: 600;
-}
-
 /* Contact */
 .contact-number {
   font-size: 1.3rem;
@@ -132,8 +136,12 @@ footer {
     font-size: 2.2rem;
   }
 
+  .logo {
+    width: 120px;  /* medium size for mobile */
+  }
+
   .nav-container {
     flex-direction: column;
     gap: 10px;
   }
-      }
+}
