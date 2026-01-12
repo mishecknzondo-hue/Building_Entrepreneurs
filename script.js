@@ -1,4 +1,4 @@
-// Auto-update current year in footer
+// Auto-update current year
 document.getElementById("year").textContent = new Date().getFullYear();
 
 // Contact interaction
@@ -10,4 +10,13 @@ function showMessage() {
     "Email: buildingentrepreneursmw@gmail.com\n\n" +
     "We look forward to working with you."
   );
+}
+
+// CEO image modal controls
+function openCeoModal() {
+  document.getElementById("ceoModal").style.display = "flex";
+}
+
+function closeCeoModal() {
+  document.getElementById("ceoModal").style.display = "none";
 }
