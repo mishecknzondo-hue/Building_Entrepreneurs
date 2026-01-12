@@ -64,7 +64,7 @@
     <div class="container">
       <h2>Our Vision</h2>
       <p>
-        To become a world-class and profitable organization that empowers young entrepreneurs
+        To become a world-class and profitable partnership that empowers young entrepreneurs
         to build successful and impactful businesses.
       </p>
     </div>
@@ -104,7 +104,7 @@
 
       <!-- CEO -->
       <div class="team-member ceo-member">
-        <img src="CEO.jpg" alt="CEO Photo" class="ceo-photo">
+        <img src="CEO.jpg" alt="CEO Photo" class="ceo-photo" onclick="openCeoModal()">
         <h3>Mr. Christopher Benson Soda</h3>
         <p><strong>Chief Executive Officer (CEO)</strong></p>
         <p>Bachelor of Science in Agribusiness Management<br>
@@ -123,6 +123,16 @@
         <p>📞 +265 883 50 45 51</p>
       </div>
 
+      <!-- Treasurer -->
+      <div class="team-member">
+        <h3>Mr. Misheck Nzondo</h3>
+        <p><strong>Treasurer</strong></p>
+        <p>Bachelor of Science in Mathematical Sciences<br>
+           Mzuzu University, Malawi
+        </p>
+        <p>📞 +265 992 08 95 55</p>
+      </div>
+
       <!-- Secretary -->
       <div class="team-member">
         <h3>Mr. Fanuel Soda</h3>
@@ -131,15 +141,6 @@
            University of Malawi, Chancellor College, Malawi
         </p>
         <p>📞 +265 998 34 29 33</p>
-      </div>
-
-      <!-- Treasurer -->
-      <div class="team-member">
-        <h3>Mr. Misheck Nzondo</h3>
-        <p><strong>Treasurer</strong></p>
-        <p>Bachelor of Science in Mathematical Sciences<br>
-           Mzuzu University, Malawi
-        </p>
       </div>
 
       <!-- Members -->
@@ -159,6 +160,7 @@
         <p>Bachelor of Arts in Journalism<br>
            Malawi University of Business and Applied Sciences, Malawi
         </p>
+        <p>📞 +265 998 84 71 57</p>
       </div>
 
       <div class="team-member">
@@ -191,6 +193,10 @@
     <div class="button-group">
       <button onclick="showMessage()">Get in Touch</button>
 
+      <a href="mailto:buildingentrepreneursmw@gmail.com" class="email-btn">
+        Email Us
+      </a>
+
       <a
         href="NEW BUILDING ENTERPRENEURS CONSTITUTION.pdf"
         class="btn-download"
@@ -216,13 +222,11 @@
     </p>
   </footer>
 
-  <script>
-    function showMessage() {
-      alert("Thank you! Please contact us via buildingentrepreneursmw@gmail.com or phone.");
-    }
+  <!-- CEO IMAGE MODAL -->
+  <div id="ceoModal" class="modal" onclick="closeCeoModal()">
+    <img src="CEO.jpg" class="modal-img" alt="CEO Large Photo">
+  </div>
 
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
-
+  <script src="script.js"></script>
 </body>
 </html>
